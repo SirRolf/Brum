@@ -1,4 +1,4 @@
-import RPI.GPIO as gpio
+import RPi.GPIO as gpio
 import time
 
 def init():
