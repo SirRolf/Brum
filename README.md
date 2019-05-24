@@ -1,7 +1,8 @@
-#InputOutput robot
+InputOutput robot
+===================================
 door sjors en flosies
 
-Posible Functions
+###Posible Functions
 
 * botssensor(kijken of de robot een muur raakt en stoppen.
 * draaibare wielen
