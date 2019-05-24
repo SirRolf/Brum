@@ -10,10 +10,10 @@ def init():
 
 def forward(duration):
     init()
-    gpio.output(17,3)
-    gpio.output(22,3)
-    gpio.output(23,3)
-    gpio.output(24,3)
+    gpio.output(17,False)
+    gpio.output(22,True)
+    gpio.output(23,False)
+    gpio.output(24,True)
     time.sleep(duration)
     gpio.cleanup()
 
