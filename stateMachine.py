@@ -14,11 +14,9 @@ class stateMachine():
         self._currentState = self._states[stateId]
 
     def Update(self):
-        self._currentState.Reason()
-        self._currentState.Act()
+        while True:
+            self._currentState.Reason()
+            self._currentState.Act()
 
     def AddState(self, stateId, State):
         self._states.Add(stateId, State)
-
-    while True:
-        Update(self)
