@@ -7,4 +7,4 @@ class state_wander():
         MotorControl.forward(.1)
     def Reason(self):
         if randint(0, 100) < 10:
-            _stateMachine.SetState(wiggle)
+            stateMachine().SetState(wiggle)
