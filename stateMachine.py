@@ -20,3 +20,6 @@ class stateMachine():
 
     def AddState(self, stateId, State):
         self._states.Add(stateId, State)
+
+    while True:
+        Update()
