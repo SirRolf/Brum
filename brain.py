@@ -2,4 +2,4 @@ import motor as MotorControl
 import stateMachine
 
 print "right"
-MotorControl.turnRight(3)
+MotorControl.turnRight(10)
