@@ -37,10 +37,10 @@ def turnLeft(duration):
 
 def turnRight(duration):
     init()
-    gpio.output(17,GPIO.LOW)
-    gpio.output(22,GPIO.HIGH)
-    gpio.output(23,GPIO.HIGH)
-    gpio.output(24,GPIO.LOW)
+    gpio.output(17,gpio.LOW)
+    gpio.output(22,gpio.HIGH)
+    gpio.output(23,gpio.HIGH)
+    gpio.output(24,gpio.LOW)
     time.sleep(duration)
     gpio.cleanup()
 
