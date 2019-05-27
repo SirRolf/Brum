@@ -23,3 +23,5 @@ class stateMachine():
 
     def AddState(stateId, State):
         _states.Add(stateId, State)
+
+    Update()
