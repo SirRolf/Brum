@@ -21,4 +21,4 @@ class stateMachine():
         self._states.Add(stateId, State)
 
     while True:
-        Update()
+        Update(self)
