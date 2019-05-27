@@ -1,4 +1,4 @@
-import motor.py as MotorControl
+import motor as MotorControl
 
 print "forward"
 MotorControl.forward(3)
