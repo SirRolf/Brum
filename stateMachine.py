@@ -5,8 +5,8 @@ class stateMachine():
     _states = {
 
     }
-
-    _currentState = state_wander()
+    def __init__(self):
+        _currentState = state_wander()
 
     isOn = True
 
