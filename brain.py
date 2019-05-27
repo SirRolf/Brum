@@ -1,4 +1,4 @@
 import motor as MotorControl
 
 print "right"
-MotorControl.forward(0.5)
+MotorControl.turnLeft(0.5)
