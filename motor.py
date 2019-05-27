@@ -25,6 +25,3 @@ def backward(duration):
     gpio.output(24,False)
     time.sleep(duration)
     gpio.cleanup()
-
-print "forward"
-forward(4)
