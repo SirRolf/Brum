@@ -2,7 +2,7 @@ import motor as MotorControl
 import state
 import random
 
-class state_wander(State):
+class state_wander():
     def Act():
         MotorControl.forward(.1)
     def Reason():
