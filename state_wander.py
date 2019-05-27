@@ -2,8 +2,6 @@ import motor as MotorControl
 from random import randint
 from stateMachine import *
 
-_stateMachine = stateMachine()
-
 class state_wander():
     def Act(self):
         MotorControl.forward(.1)
