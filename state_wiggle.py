@@ -1,6 +1,6 @@
 import motor as MotorControl
 
-class statewiggle():
+class state_wiggle():
     def Act(self):
         MotorControl.turnLeft(0.25)
         MotorControl.turnRight(0.25)
