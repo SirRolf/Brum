@@ -1,10 +1,10 @@
 import motor as MotorControl
 import state
-import random
+from random import randint
 
 class state_wander():
     def Act(self):
         MotorControl.forward(.1)
     def Reason(self):
-        if passrandom.randint(1,101) < 20:
+        if randint(0, 100) < 20:
             exit()
