@@ -8,7 +8,7 @@ def init():
     gpio.setup(23, gpio.OUT)
     gpio.setup(24, gpio.OUT)
 
-def forward(duration):
+def turnRight(duration):
     init()
     gpio.output(17,False)
     gpio.output(22,True)
@@ -17,7 +17,7 @@ def forward(duration):
     time.sleep(duration)
     gpio.cleanup()
 
-def backward(duration):
+def turnLeft(duration):
     init()
     gpio.output(17,True)
     gpio.output(22,False)
@@ -26,7 +26,7 @@ def backward(duration):
     time.sleep(duration)
     gpio.cleanup()
 
-def turnLeft(duration):
+def backward(duration):
     init()
     gpio.output(17,True)
     gpio.output(22,False)
@@ -35,7 +35,7 @@ def turnLeft(duration):
     time.sleep(duration)
     gpio.cleanup()
 
-def turnRight(duration):
+def forward(duration):
     init()
     gpio.output(17,False)
     gpio.output(22,True)
