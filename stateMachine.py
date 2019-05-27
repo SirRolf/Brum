@@ -12,8 +12,7 @@ class stateMachine():
 
     def SetState(self, stateId):
         if stateId in self._states.Keys():
-            return
-        self._currentState = self._states[stateId]
+            self._currentState = self._states[stateId]
 
     def Update(self):
         self._currentState.Reason()
