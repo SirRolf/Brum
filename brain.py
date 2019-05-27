@@ -1,5 +1,5 @@
 import motor as MotorControl
 
-for x in banaan:
+while True:
     MotorControl.turnLeft(0.25)
     MotorControl.turnRight(0.25)
