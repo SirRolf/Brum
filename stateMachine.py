@@ -8,7 +8,9 @@ class stateMachine():
 
     _currentState = state_wander()
 
-    isOn = True
+    while True:
+        _currentState.Reason()
+        _currentState.Act()
 
     def SetState(stateId):
         if _states in _currentState.Keys():
@@ -16,12 +18,5 @@ class stateMachine():
             return
         _currentState = _states[stateId]
 
-    def Update():
-        while True:
-            _currentState.Reason()
-            _currentState.Act()
-
     def AddState(stateId, State):
         _states.Add(stateId, State)
-
-    Update()
