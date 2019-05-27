@@ -6,5 +6,5 @@ class state_wander():
     def Act(self):
         MotorControl.forward(.1)
     def Reason(self):
-        if randint(0, 100) < 1:
+        if randint(0, 100) < 10:
             exit()
