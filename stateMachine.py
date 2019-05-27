@@ -17,7 +17,7 @@ class stateMachine():
         _currentState = _states[stateId]
 
     def Update():
-        while isOn:
+        while True:
             _currentState.Reason()
             _currentState.Act()
 
