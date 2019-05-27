@@ -6,8 +6,8 @@ class stateMachine():
     def __init__(self):
         self._currentState = state_wander()
         self._states = {
-            wander = state_wander()
-            wiggle = state_wiggle()
+            "wander" : state_wander(),
+            "wiggle" : state_wiggle()
         }
 
     def SetState(self, stateId):
