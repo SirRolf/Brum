@@ -1,4 +1,4 @@
-import ../motor as MotorControl
+import motor as MotorControl
 
 _states = {
 

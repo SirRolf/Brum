@@ -1,5 +1,5 @@
 import motor as MotorControl
-import stateMachine/stateMachine as stateMachine
+from stateMachine
 
 print "right"
 MotorControl.turnRight(3)
