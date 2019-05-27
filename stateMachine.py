@@ -1,7 +1,7 @@
 import motor as MotorControl
 import state_wander
 
-class stateMachine(object):
+class stateMachine():
     _states = {
 
     }
