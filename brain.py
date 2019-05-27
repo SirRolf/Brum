@@ -1,4 +1,3 @@
 import motor as MotorControl
 
-print "right"
-MotorControl.forward(0.5)
+MotorControl.backward(0.5)
