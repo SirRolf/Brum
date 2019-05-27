@@ -1,1 +1,3 @@
-def Act():
+
+class State():
+    def Act():
