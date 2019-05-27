@@ -2,26 +2,23 @@ import motor as MotorControl
 from state_wander import *
 
 class stateMachine():
-    _states = {
-
-    }
     def __init__(self):
-        _currentState = state_wander()
+        self._currentState = state_wander()
+        self._states = {
 
-    isOn = True
+        }
 
-    def SetState(stateId):
-        if _states in _currentState.Keys():
-            print "return"
+    def SetState(self, stateId):
+        if stateId in self._states.Keys():
             return
-        _currentState = _states[stateId]
+        self._currentState = self._states[stateId]
 
-    def Update():
-        while True:
-            _currentState.Reason()
-            _currentState.Act()
+    def Update(self):
+        self._currentState.Reason()
+        self._currentState.Act()
 
-    def AddState(stateId, State):
-        _states.Add(stateId, State)
+    def AddState(self, stateId, State):
+        self._states.Add(stateId, State)
 
-    Update()
+    while True:
+        Update()
