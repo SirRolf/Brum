@@ -1,4 +1,4 @@
 import motor as MotorControl
 
 print "right"
-MotorControl.turnRight(1)
+MotorControl.forward(1)
