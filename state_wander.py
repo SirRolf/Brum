@@ -3,6 +3,7 @@ from random import randint
 from stateMachine import *
 
 class state_wander():
+    _stateMachine = stateMachine()
     def Act(self):
         MotorControl.forward(.1)
     def Reason(self):
