@@ -2,11 +2,11 @@ import motor as MotorControl
 from random import randint
 from stateMachine import *
 
-_stateMachine = stateMachine()
+self._stateMachine = stateMachine()
 
 class state_wander():
     def Act(self):
         MotorControl.forward(.1)
     def Reason(self):
         if randint(0, 100) < 10:
-            _stateMachine.SetState(wiggle)
+            self._stateMachine.SetState(wiggle)
