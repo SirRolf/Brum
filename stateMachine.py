@@ -11,7 +11,7 @@ class stateMachine():
         self._currentState = self._states["wander"]
 
     def SetState(self, stateId):
-        if stateId in self._states.Keys():
+        if stateId in self._states:
             self._currentState = self._states[stateId]
 
     def Update(self):
