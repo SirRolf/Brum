@@ -1,6 +1,6 @@
 InputOutput robot
 ===================================
-door sjors en flosies
+door Sjors en Floris
 
 ## Posible Functions
 
