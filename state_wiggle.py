@@ -6,6 +6,6 @@ class state_wiggle():
         MotorControl.turnLeft(0.25)
         MotorControl.turnRight(0.5)
         MotorControl.turnLeft(0.25)
+        exit()
     def Reason(self):
-        if randint(0, 100) < 50:
-            exit()
+        pass
