@@ -8,7 +8,7 @@ class state_wander():
         commands = [
         MotorControl.forward(random() * .5),
         MotorControl.backward(random() * .05),
-        MotorControl.motorsOff(random() * 1),
+        MotorControl.wait(random() * 1),
         exit()
         ]
     def Act(self):
