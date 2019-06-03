@@ -12,7 +12,6 @@ class state_wander():
         exit()
         ]
     def Act(self):
-        random.choice(commands)
-
+        pass
     def Reason(self):
         pass
