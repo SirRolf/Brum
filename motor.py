@@ -44,7 +44,7 @@ def forward(duration):
     time.sleep(duration)
     gpio.cleanup()
 
-def wait():
+def wait(duration):
     init()
     gpio.output(17,False)
     gpio.output(22,False)
