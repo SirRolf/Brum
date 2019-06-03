@@ -1,6 +1,5 @@
 import motor as MotorControl
 from random import randint
-from stateMachine import *
 
 _stateMachine = stateMachine()
 
