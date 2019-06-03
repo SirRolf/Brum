@@ -7,7 +7,8 @@ class state_wander():
     def __init__(self, stateMachine):
         self._stateMachine = stateMachine
     def Act(self):
-        MotorControl.forward(.1)
+        MotorControl.forward(randint(0, 0.1))
+
     def Reason(self):
         if randint(0, 100) < 10:
             self._stateMachine.SetState("wiggle")

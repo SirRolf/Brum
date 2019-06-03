@@ -1,4 +1,5 @@
 import motor as MotorControl
+import keyboard
 from state_wander import *
 from state_wiggle import *
 
@@ -15,6 +16,8 @@ class stateMachine():
             self._currentState = self._states[stateId]
 
     def Update(self):
+        if keyboard.is_pressed('p'):
+            exit()
         self._currentState.Reason()
         self._currentState.Act()
 
