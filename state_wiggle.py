@@ -1,4 +1,5 @@
 import motor as MotorControl
+from random import randint
 
 class state_wiggle():
     def Act(self):
