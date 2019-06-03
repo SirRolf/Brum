@@ -6,9 +6,9 @@ class state_wander():
     def __init__(self, stateMachine):
         self._stateMachine = stateMachine
         commands = [
-        MotorControl.forward(random() * .5),
-        MotorControl.backward(random() * .05),
-        MotorControl.wait(random() * 1),
+        MotorControl.forward(random() * 6),
+        MotorControl.backward(random() * 1),
+        MotorControl.wait(random() * 10),
         exit()
         ]
     def Act(self):
