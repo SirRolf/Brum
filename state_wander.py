@@ -5,7 +5,7 @@ from stateMachine import *
 class state_wander():
     def __init__(self, stateMachine):
         self._stateMachine = stateMachine
-        commands = [
+        self.commands = [
         MotorControl.forward,
         MotorControl.backward,
         MotorControl.wait
