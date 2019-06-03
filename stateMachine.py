@@ -4,11 +4,11 @@ from state_wiggle import *
 
 class stateMachine():
     def __init__(self):
-        self._currentState = state_wander()
         self._states = {
-            "wander" : state_wander(),
+            "wander" : state_wander(self),
             "wiggle" : state_wiggle()
         }
+        self._currentState = self._states["wander"]
 
     def SetState(self, stateId):
         if stateId in self._states.Keys():
