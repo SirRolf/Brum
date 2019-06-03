@@ -8,10 +8,12 @@ class state_wander():
         self.commands = [
         MotorControl.forward,
         MotorControl.backward,
-        MotorControl.wait
+        MotorControl.wait,
+        MotorControl.turnLeft,
+        MotorControl.turnRight
         ]
     def Act(self):
-        random.choice(self.commands)(1)
+        random.choice(self.commands)(.5)
 
     def Reason(self):
         if random.randint(0, 100) < 30:
