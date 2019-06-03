@@ -14,5 +14,5 @@ class state_wander():
         random.choice(commands)(randomint(1,4))
 
     def Reason(self):
-        if randint(0, 100) < 30:
+        if random.randint(0, 100) < 30:
             exit()
