@@ -11,7 +11,7 @@ class state_wander():
         MotorControl.wait
         ]
     def Act(self):
-        random.choice(commands)(randomint(1,4))
+        random.choice(self.commands)(randomint(1,4))
 
     def Reason(self):
         if random.randint(0, 100) < 30:
