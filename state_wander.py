@@ -6,7 +6,6 @@ from stateMachine import *
 class state_wander():
     def __init__(self, stateMachine):
         self._stateMachine = stateMachine
-
     def Act(self):
         MotorControl.forward(.1)
     def Reason(self):
