@@ -7,11 +7,11 @@ class state_wander():
         self._stateMachine = stateMachine
         # put your commands here
         self.commands = [
-        [MotorControl.forward, .3, .5] * 1,
+        [MotorControl.forward, .3, .5] * 3,
         [MotorControl.backward, .2, .3] * 1,
-        [MotorControl.wait, 2, 3.5] * 6,
-        [MotorControl.turnLeft, .3, .5] * 1,
-        [MotorControl.turnRight, .3, .5] * 1
+        [MotorControl.wait, 2, 3.5] * 4,
+        [MotorControl.turnLeft, .3, .5] * 2,
+        [MotorControl.turnRight, .3, .5] * 2
         ]
     def Act(self):
         # gets a random command
