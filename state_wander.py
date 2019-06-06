@@ -7,15 +7,15 @@ class state_wander():
         self._stateMachine = stateMachine
         # put your commands here
         self.commands = [
-        [MotorControl.forward, .2, .5],
-        [MotorControl.backward, .1, .3],
-        [MotorControl.wait, 2, 3.5],
-        [MotorControl.turnLeft, .1, .5],
-        [MotorControl.turnRight, .1, .5]
+        [MotorControl.forward, .2, .5] * 10,
+        [MotorControl.backward, .1, .3] * 10,
+        [MotorControl.wait, 2, 3.5] * 60,
+        [MotorControl.turnLeft, .1, .5] * 10,
+        [MotorControl.turnRight, .1, .5] * 10
         ]
     def Act(self):
         # gets random int for a command from the commands array
-        commandNumber = random.randint(0, 4)
+        commandNumber = random.randint(0, 99)
         # makes it a simple to use variable
         command = self.commands[commandNumber]
         # runs the script inside the commands array and gives it random times
