@@ -1,5 +1,6 @@
 import motor as MotorControl
 import random
+from sensordetection import sensordetect
 from stateMachine import *
 
 class state_wander():
@@ -21,6 +22,7 @@ class state_wander():
         print(command)
 
     def Reason(self):
+        print(sensordetect())
         # little somthing so you won't get an infinite loop
         if random.randint(0, 100) < 10:
             exit()

@@ -33,4 +33,6 @@ def sensordetect():
 
     GPIO.cleanup()
 
+    return distance
+
 sensordetect()
