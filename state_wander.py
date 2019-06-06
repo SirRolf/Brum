@@ -19,7 +19,7 @@ class state_wander():
         print(commandNumber)
         print(self.commands)
         # makes it a simple to use variable
-        command = self.commands[5]
+        command = random.choice(self.commands)
         # runs the script inside the commands array and gives it random times
         command[0](random.uniform(command[1],command[2]))
         print(command)
