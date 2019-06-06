@@ -22,5 +22,5 @@ class state_wander():
 
     def Reason(self):
         # little somthing so you won't get an infinite loop
-        if random.randint(0, 100) < 30:
+        if random.randint(0, 100) < 10:
             exit()
