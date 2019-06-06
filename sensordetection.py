@@ -1,12 +1,11 @@
 import RPi.GPIO as GPIO
 import time
-GPIO.setmode(GPIO.BCM)
-
-TRIG = 16
-ECHO = 20
 
 def sensordetect():
 
+    TRIG = 16
+    ECHO = 20
+    GPIO.setmode(GPIO.BCM)
     GPIO.setup(TRIG,GPIO.OUT)
     GPIO.setup(ECHO,GPIO.IN)
 
@@ -31,8 +30,8 @@ def sensordetect():
 
     print"Distance",distance,"cm"
 
-    GPIO.cleanup()
-
     return distance
+
+    GPIO.cleanup()
 
 sensordetect()
