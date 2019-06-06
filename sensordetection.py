@@ -29,3 +29,5 @@ def sensordetect():
     print"Distance",distance,"cm"
 
     GPIO.cleanup()
+
+sensordetect()
