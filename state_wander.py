@@ -14,11 +14,7 @@ class state_wander():
         [MotorControl.turnRight, .3, .5] * 1
         ]
     def Act(self):
-        # gets random int for a command from the commands array
-        commandNumber = random.randint(0, 9)
-        print(commandNumber)
-        print(self.commands)
-        # makes it a simple to use variable
+        # gets a random command
         command = random.choice(self.commands)
         # runs the script inside the commands array and gives it random times
         command[0](random.uniform(command[1],command[2]))
