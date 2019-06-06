@@ -11,7 +11,7 @@ def sensordetect():
     GPIO.setup(ECHO,GPIO.IN)
 
     GPIO.output(TRIG, False)
-    time.sleep(0.2)
+    time.sleep(2)
 
     GPIO.output(TRIG,True)
     time.sleep(0.00001)
