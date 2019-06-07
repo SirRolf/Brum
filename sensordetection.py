@@ -27,8 +27,10 @@ def sensordetect():
 
     distance = round(distance, 2)
 
-    return distance
+    print distance
 
     GPIO.cleanup()
+
+    return distance
 
 sensordetect()
