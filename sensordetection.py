@@ -10,7 +10,6 @@ def sensordetect():
     GPIO.setup(ECHO,GPIO.IN)
 
     GPIO.output(TRIG, False)
-    time.sleep(2)
 
     GPIO.output(TRIG,True)
     time.sleep(0.00001)
@@ -27,8 +26,6 @@ def sensordetect():
     distance = pulse_duration * 17150
 
     distance = round(distance, 2)
-
-    print"Distance",distance,"cm"
 
     return distance
 
