@@ -21,10 +21,7 @@ class state_wander():
         command[0](random.uniform(command[1],command[2]))
 
     def Reason(self):
-        # still need to make it so that the script will stop when sensordetect() returns less then 4
+        # stops application if the distance of the sensor is lower then the value given
         if sensordetect() < 10:
             print("stopping cus of distance")
-            exit()
-        # little somthing so you won't get an infinite loop
-        if random.randint(0, 100) < 10:
             exit()
