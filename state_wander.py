@@ -19,10 +19,12 @@ class state_wander():
         command = random.choice(self.commands)
         # runs the script inside the commands array and gives it random times
         command[0](random.uniform(command[1],command[2]))
-        print(command)
 
     def Reason(self):
-        print(sensordetect())
+        # still need to make it so that the script will stop when sensordetect() returns less then 4
+        if sensordetect() < 10:
+            print("stopping cus of distance")
+            exit()
         # little somthing so you won't get an infinite loop
         if random.randint(0, 100) < 10:
             exit()
