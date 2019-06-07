@@ -8,7 +8,7 @@ class state_wander():
         self._stateMachine = stateMachine
         # put your commands here
         self.commands = [
-        [MotorControl.forward, .2, .4] * 3 +
+        [MotorControl.forward, .2, .4] * 1+
         [MotorControl.backward, .1, .2] * 1 +
         [MotorControl.wait, 2, 3] * 4 +
         [MotorControl.turnLeft, .2, .5] * 2 +
