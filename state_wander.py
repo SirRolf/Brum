@@ -17,7 +17,7 @@ class state_wander():
     def Act(self):
 
         # gets a random command
-        command = random.choices(self.commands, weights=[0.1, 0.1, 0.6, 0.1, 0.1])
+        command = random.choices(self.commands, weights=[0.1, 0.1, 0.6, 0.1, 0.1], k=1)
         # runs the script inside the commands array and gives it random times
         command[0](random.uniform(command[1],command[2]))
 
