@@ -4,6 +4,7 @@ def RandomList(list, chances):
     package = list
     result = 0
     maxScore = 0
+    catagory = 0
     for i in chances:
         maxScore += i
 
