@@ -2,6 +2,7 @@ import motor as MotorControl
 import random
 from sensordetection import sensordetect
 from stateMachine import *
+from listPicker import RandomList
 
 class state_wander():
     def __init__(self, stateMachine):
@@ -14,9 +15,16 @@ class state_wander():
         [MotorControl.turnLeft, .2, .5],
         [MotorControl.turnRight, .2, .5]
         ]
+        self.commandChances = [
+        30,
+        10,
+        40,
+        10,
+        10
+        ]
     def Act(self):
         # gets a random command
-        command = random.choice(self.commands)
+        command = RandomList(self.commands, self.commandChances)
         # runs the script inside the commands array and gives it random times
         command[0](random.uniform(command[1],command[2]))
 
