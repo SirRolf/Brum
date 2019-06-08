@@ -13,4 +13,4 @@ def RandomList(list, chances):
         if catagory >= score:
             package = list[result]
             return package
-        result++;
+        result++
