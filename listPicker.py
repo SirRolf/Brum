@@ -3,6 +3,7 @@ from random import randint
 def RandomList(list, chances):
     package = list
     result = 0
+    global maxScore
     for i in chances:
         maxScore += i
 
