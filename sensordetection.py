@@ -3,6 +3,9 @@ import time
 
 def sensordetect():
 
+    pulse_start
+    pulse_end
+
     TRIG = 16
     ECHO = 20
     GPIO.setmode(GPIO.BCM)
