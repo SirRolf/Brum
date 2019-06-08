@@ -4,6 +4,10 @@ import time
 def sensordetect():
     TRIG = 16
     ECHO = 20
+
+    pulse_start = 0.0
+    pulse_end = 0.0
+
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(TRIG,GPIO.OUT)
     GPIO.setup(ECHO,GPIO.IN)
