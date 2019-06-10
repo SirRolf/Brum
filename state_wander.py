@@ -16,9 +16,9 @@ class state_wander():
         [MotorControl.turnRight, .2, .5]
         ]
         self.commandChances = [
-        30,
+        25,
         10,
-        40,
+        60,
         10,
         10
         ]
