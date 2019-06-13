@@ -16,9 +16,9 @@ class state_wander():
         [MotorControl.turnRight, .2, .5]
         ]
         self.commandChances = [
-        60,
-        10,
         25,
+        2,
+        60,
         10,
         10
         ]
@@ -31,5 +31,5 @@ class state_wander():
     def Reason(self):
         # stops application if the distance of the sensor is lower then the value given
         if sensordetect() < 10:
-            print("going to stay")
-            stateMachine.SetState(self, "stay")
+            print("stopping cus of distance")
+            exit()

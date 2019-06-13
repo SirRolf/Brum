@@ -1,12 +1,14 @@
 import motor as MotorControl
 from state_wander import *
 from state_wiggle import *
+from state_stay import *
 
 class stateMachine():
     def __init__(self):
         self._states = {
             "wander" : state_wander(self),
-            "wiggle" : state_wiggle()
+            "wiggle" : state_wiggle(),
+            "stay" : state_stay(self)
         }
         self._currentState = self._states["wander"]
 
