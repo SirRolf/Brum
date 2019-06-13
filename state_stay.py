@@ -30,6 +30,6 @@ class state_stay():
 
     def Reason(self):
         # stops application if the distance of the sensor is lower then the value given
-        if sensordetect() < 10:
+        if sensordetect() < 5:
             print("stopping cus of distance")
             exit()
