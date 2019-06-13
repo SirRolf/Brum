@@ -9,8 +9,8 @@ class state_backOff():
         self.isDone = False
     def Act(self):
         MotorControl.backward(1)
-        MotorControl.wait(.5)
-        MotorControl.turnLeft(.5)
+        MotorControl.wait(.2)
+        MotorControl.turnLeft(.3)
         self.isDone = True
     def Reason(self):
         if self.isDone is True:
