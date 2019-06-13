@@ -8,7 +8,8 @@ class stateMachine():
         self._states = {
             "wander" : state_wander(self),
             "wiggle" : state_wiggle(),
-            "stay" : state_stay(self)
+            "stay" : state_stay(self),
+            "backOff" : state_backOff(self)
         }
         self._currentState = self._states["wander"]
 

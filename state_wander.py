@@ -34,4 +34,4 @@ class state_wander():
         # stops application if the distance of the sensor is lower then the value given
         if sensordetect() < 30:
             print("going to stay")
-            self._stateMachine.SetState("stay")
+            self._stateMachine.SetState("backOff")
