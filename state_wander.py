@@ -9,18 +9,18 @@ class state_wander():
         self._stateMachine = stateMachine
         # put your commands here
         self.commands = [
-        [MotorControl.forward, .2, .4, [60,0,10,25,25]],
+        [MotorControl.forward, 1, 1.5, [60,0,10,25,25]],
         [MotorControl.backward, .1, .2],
-        [MotorControl.wait, 2, 3, [60,0,25,10,10]],
-        [MotorControl.turnLeft, .2, .5, [60,0,10,25,25]],
-        [MotorControl.turnRight, .2, .5, [60,0,10,25,25]]
+        [MotorControl.wait, 2, 3, [60,0,45,10,10]],
+        [MotorControl.turnLeft, .2, .5, [60,0,0,0,0]],
+        [MotorControl.turnRight, .2, .5, [60,0,0,0,0]]
         ]
         self.commandChances = [
         60,
         0,
         25,
-        10,
-        10
+        0,
+        0
         ]
     def Act(self):
         # gets a random command
