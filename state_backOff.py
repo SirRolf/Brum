@@ -9,10 +9,9 @@ class state_backOff():
         self.isDone = False
     def Act(self):
         MotorControl.backward(1)
-        if sensordetect() < 30:
-            MotorControl.wait(.5)
-            MotorControl.turnLeft(.5)
-            self.isDone = True
+        MotorControl.wait(.5)
+        MotorControl.turnLeft(.5)
+        self.isDone = True
     def Reason(self):
         if self.isDone is True:
             self.isDone = False
