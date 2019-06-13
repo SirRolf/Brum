@@ -4,7 +4,7 @@ from sensordetection import sensordetect
 from stateMachine import *
 from listPicker import RandomList
 
-class state_wander():
+class state_stay():
     def __init__(self, stateMachine):
         self._stateMachine = stateMachine
         # put your commands here
