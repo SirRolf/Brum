@@ -6,14 +6,14 @@ from sensordetection import sensordetect
 class state_backOff():
     def __init__(self, stateMachine):
         self._stateMachine = stateMachine
-        isDone = False
+        self.isDone = False
     def Act(self):
         MotorControl.backward(1)
         if sensordetect() < 30:
             MotorControl.wait(.5)
             MotorControl.turnLeft(.5)
-            isDone = True
+            self.isDone = True
     def Reason(self):
-        if isDone is True:
-            isDone = False
+        if self.isDone is True:
+            self.isDone = False
             exit()
