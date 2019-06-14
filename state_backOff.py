@@ -8,7 +8,7 @@ class state_backOff():
         self._stateMachine = stateMachine
         self.isDone = False
     def Act(self):
-        MotorControl.backward(1)
+        MotorControl.backward(.5)
         MotorControl.wait(.2)
         MotorControl.turnLeft(.3)
         self.isDone = True
