@@ -18,7 +18,7 @@ class state_stay():
         self.commandChances = [
         25,
         2,
-        60,
+        40,
         10,
         10
         ]
