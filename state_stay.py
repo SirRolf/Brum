@@ -29,7 +29,7 @@ class state_stay():
         command[0](random.uniform(command[1],command[2]))
 
     def Reason(self):
-        # stops application if the distance of the sensor is lower then the value given
-        if sensordetect() < 5:
-            print("stopping cus of distance")
-            exit()
+        # going to wander again if this happens
+        if random.randint(1, 100) > 5:
+            print("going to wander again")
+            self._stateMachine.SetState("wander")
