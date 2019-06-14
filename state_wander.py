@@ -9,14 +9,14 @@ class state_wander():
         self._stateMachine = stateMachine
         # put your commands here
         self.commands = [
-        [MotorControl.forward, .5, 1, [60,0,10,25,25]],
+        [MotorControl.forward, .25, .5, [80,0,10,25,25]],
         [MotorControl.backward, .1, .2],
-        [MotorControl.wait, 2, 3, [60,0,45,10,10]],
-        [MotorControl.turnLeft, .2, .5, [60,0,0,0,0]],
-        [MotorControl.turnRight, .2, .5, [60,0,0,0,0]]
+        [MotorControl.wait, 2, 3, [80,0,45,10,10]],
+        [MotorControl.turnLeft, .2, .5, [80,0,0,0,0]],
+        [MotorControl.turnRight, .2, .5, [80,0,0,0,0]]
         ]
         self.commandChances = [
-        60,
+        80,
         0,
         25,
         0,
@@ -32,6 +32,6 @@ class state_wander():
 
     def Reason(self):
         # stops application if the distance of the sensor is lower then the value given
-        if sensordetect() < 30:
+        if sensordetect() < 20:
             print("wall, backing off")
             self._stateMachine.SetState("backOff")
