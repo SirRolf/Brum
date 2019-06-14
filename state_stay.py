@@ -33,3 +33,6 @@ class state_stay():
         if random.randint(1, 100) < 5:
             print("going to wander again")
             self._stateMachine.SetState("wander")
+        if sensordetect() < 20:
+            print("wall, backing off")
+            self._stateMachine.SetState("backOff")
