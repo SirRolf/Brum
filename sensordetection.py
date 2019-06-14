@@ -32,6 +32,9 @@ def sensordetect():
 
     print distance
 
+    pulse_start = 0.0
+    pulse_end = 0.0
+
     GPIO.cleanup()
 
     return distance
