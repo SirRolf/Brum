@@ -11,7 +11,7 @@ class state_wander():
         self.commands = [
         [MotorControl.forward, .25, .5, [80,0,10,25,25]],
         [MotorControl.backward, .1, .2],
-        [MotorControl.wait, 2, 3, [80,0,45,10,10]],
+        [MotorControl.wait, 2, 3, [80,0,45,0,0]],
         [MotorControl.turnLeft, .2, .5, [80,0,0,0,0]],
         [MotorControl.turnRight, .2, .5, [80,0,0,0,0]]
         ]
