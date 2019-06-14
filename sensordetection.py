@@ -15,7 +15,7 @@ def sensordetect():
     GPIO.output(TRIG, False)
 
     GPIO.output(TRIG,True)
-    time.sleep(0.001)
+    time.sleep(0.00001)
     GPIO.output(TRIG,False)
 
     while GPIO.input(ECHO)==0:
@@ -32,9 +32,8 @@ def sensordetect():
 
     print distance
 
-    pulse_start = 0.0
-    pulse_end = 0.0
-
     GPIO.cleanup()
 
     return distance
+
+sensordetect()
