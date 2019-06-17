@@ -15,3 +15,4 @@ class init():
         print('You pressed Ctrl+C!')
         MotorControl.motorsOff()
         exit()
+    run_program()
