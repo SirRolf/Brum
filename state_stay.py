@@ -30,7 +30,7 @@ class state_stay():
 
     def Reason(self):
         # going to wander again if this happens
-        if random.randint(1, 100) < 5:
+        if random.randint(1, 100) < 20:
             print("going to wander again")
             self._stateMachine.SetState("wander")
         if sensordetect() < 20:
