@@ -9,7 +9,7 @@ class state_wander():
         self._stateMachine = stateMachine
         # put your commands here
         self.commands = [
-        [MotorControl.forward, .25, .5, [80,0,10,25,25]],
+        [MotorControl.forward, .25, .5, [80,0,10,15,15]],
         [MotorControl.backward, .1, .2],
         [MotorControl.wait, 2, 3, [80,0,45,0,0]],
         [MotorControl.turnLeft, .2, .5, [80,0,0,0,0]],
