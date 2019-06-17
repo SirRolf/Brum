@@ -36,3 +36,6 @@ class state_stay():
         if sensordetect() < 20:
             print("wall, backing off")
             self._stateMachine.SetState("backOff")
+        if keyboard.is_pressed('ENTER'):
+            MotorControl.motorsOff()
+            exit()

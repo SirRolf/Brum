@@ -1,5 +1,6 @@
 import motor as MotorControl
 import random
+import keyboard
 from sensordetection import sensordetect
 from stateMachine import *
 from listPicker import RandomList
@@ -38,3 +39,6 @@ class state_wander():
         if sensordetect() < 20:
             print("wall, backing off")
             self._stateMachine.SetState("backOff")
+        if keyboard.is_pressed('ENTER'):
+            MotorControl.motorsOff()
+            exit()
