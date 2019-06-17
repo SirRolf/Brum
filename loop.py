@@ -5,7 +5,7 @@ import signal
 _stateMachine = stateMachine()
 
 class init():
-    def self.signal_handler(sig, frame):
+    def signal_handler(sig, frame):
         print('You pressed Ctrl+C!')
         MotorControl.motorsOff()
         exit()
