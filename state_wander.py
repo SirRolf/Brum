@@ -31,7 +31,7 @@ class state_wander():
             self.commandChances = command[3]
 
     def Reason(self):
-        if random.randint(1, 100) < 3:
+        if random.randint(1, 100) < 0:
             print("going to stay here for a bit")
             self._stateMachine.SetState("stay")
         # stops application if the distance of the sensor is lower then the value given
