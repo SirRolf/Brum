@@ -1,7 +1,7 @@
 from random import randint
 
-def RandomList(list, chances):
-    package = list
+def RandomList(aList, chances):
+    package = aList
     result = 0
     maxScore = 0
     catagory = 0
@@ -13,6 +13,6 @@ def RandomList(list, chances):
     for i in chances:
         catagory += i
         if catagory >= score:
-            package = list[result]
+            package = aList[result]
             return package
         result += 1
