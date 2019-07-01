@@ -1,2 +1,2 @@
-echo "test"
-python loop.py
+sudo kill $(ps ax | grep 'loop' | grep -v grep | awk '{print $1}')
+sudo nohup python Shutdown.py
