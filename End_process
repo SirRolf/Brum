@@ -1,2 +1,2 @@
-sudo kill $(ps ax | grep 'loop' | grep -v grep | awk '{print $1}')
+pkill -f "loop"
 sudo nohup python Shutdown.py
