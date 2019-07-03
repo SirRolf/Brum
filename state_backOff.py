@@ -8,11 +8,10 @@ class state_backOff():
         self._stateMachine = stateMachine
         self.isDone = False
     def Act(self):
-        MotorControl.backward(.5)
-        MotorControl.wait(.2)
-        MotorControl.turnLeft(.3)
-        self.isDone = True
+        MotorControl.turnLeft(.1)
+        if sensordetect() > 30:
+            self.isDone = True
     def Reason(self):
         if self.isDone is True:
             self.isDone = False
-            exit()
+            self._stateMachine.SetState("stay")
