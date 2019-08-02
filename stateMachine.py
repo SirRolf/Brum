@@ -12,7 +12,7 @@ class stateMachine():
             "stay" : state_stay(self),
             "backOff" : state_backOff(self)
         }
-        self._currentState = self._states["wander"]
+        self._currentState = self._states["stay"]
 
     def SetState(self, stateId):
         if stateId in self._states:

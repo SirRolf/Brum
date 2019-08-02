@@ -14,7 +14,6 @@ def turnRight(duration):
     gpio.output(22,True)
     gpio.output(23,False)
     gpio.output(24,True)
-    print("turnRight")
     time.sleep(duration)
     gpio.cleanup()
 
@@ -24,7 +23,6 @@ def turnLeft(duration):
     gpio.output(22,False)
     gpio.output(23,True)
     gpio.output(24,False)
-    print("turnleft")
     time.sleep(duration)
     gpio.cleanup()
 
@@ -34,7 +32,6 @@ def backward(duration):
     gpio.output(22,False)
     gpio.output(23,False)
     gpio.output(24,True)
-    print("backward")
     time.sleep(duration)
     gpio.cleanup()
 
@@ -44,7 +41,6 @@ def forward(duration):
     gpio.output(22,True)
     gpio.output(23,True)
     gpio.output(24,False)
-    print("forward")
     time.sleep(duration)
     gpio.cleanup()
 
@@ -54,7 +50,6 @@ def wait(duration):
     gpio.output(22,False)
     gpio.output(23,False)
     gpio.output(24,False)
-    print("wait")
     time.sleep(duration)
     gpio.cleanup()
 
@@ -64,5 +59,4 @@ def motorsOff():
     gpio.output(22,False)
     gpio.output(23,False)
     gpio.output(24,False)
-    print("motorsOff")
     gpio.cleanup()

@@ -27,11 +27,13 @@ class state_wander():
         command = RandomList(self.commands, self.commandChances)
         # runs the script inside the commands array and gives it random times
         command[0](random.uniform(command[1],command[2]))
+        # this changes the chances
         if command[3] is not None:
             self.commandChances = command[3]
 
     def Reason(self):
-        if random.randint(1, 100) < 0:
+        # change to stay script at random
+        if random.randint(1, 100) < 10:
             print("going to stay here for a bit")
             self._stateMachine.SetState("stay")
         # stops application if the distance of the sensor is lower then the value given
