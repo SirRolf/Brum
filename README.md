@@ -1,5 +1,7 @@
 Brum
 ===================================
+Brum is a small project I work on in my freetime. I want to make a robot that acts like a companion. Almost like having a mechanical pet.
+
 
 ## Features
 
