@@ -1,4 +1,4 @@
-InputOutput robot A.K.A. Brum
+Brum
 ===================================
 
 ## Features
