@@ -1,11 +1,8 @@
-InputOutput robot
+InputOutput robot A.K.A. Brum
 ===================================
-door Sjors en Floris
 
-## Posible Functions
+## Features
 
-* botssensor(kijken of de robot een muur raakt en stoppen.
-* draaibare wielen
-* sneller en langzamer gaan
-* Character menselijker maken door een scherm te geven met ogen
-* Gekleurde lijn volgen door middel van een camera
+* Distance sensor, can detect for objects and will react if he meats somthing.
+* State machine, can add new states with just one line.
+* Motor controlls.
