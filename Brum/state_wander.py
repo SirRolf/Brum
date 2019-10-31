@@ -36,7 +36,7 @@ class state_wander():
         if random.randint(1, 100) < 10:
             print("going to stay here for a bit")
             self._stateMachine.SetState("stay")
-        # stops application if the distance of the sensor is lower then the value given
+        # swithes state if the distance of the sensor is lower then the value given
         if sensordetect() < 20:
             print("wall, backing off")
             self._stateMachine.SetState("backOff")

@@ -21,6 +21,3 @@ class stateMachine():
     def Update(self):
         self._currentState.Reason()
         self._currentState.Act()
-
-    def AddState(self, stateId, State):
-        self._states.Add(stateId, State)
