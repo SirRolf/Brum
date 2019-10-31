@@ -1,8 +1,11 @@
 import motor as MotorControl
-from mood_wander import *
 
 class MoodMachine():
     def __init__(self):
+        self._moodStatus = {
+            "happy" : 0,
+            "sad" : 0
+        }
         # list of moods
         self._moods = {
             # null is only here for the first time you start the program
@@ -11,6 +14,10 @@ class MoodMachine():
             "sad"
         }
         self._currentMood = self._moods["null"]
+
+    def ChangeMoodStatus(self, moodId, amount):
+        if moodId in self._moodStatus:
+            self.moodStatus[moodId] += amount
 
     def SetMood(self, moodId):
         if moodId in self._moods:
