@@ -24,5 +24,5 @@ class MoodMachine():
             self._currentMood = self._moods[moodId]
 
     def GetMood(self):
-        # return current mood so you can useit in other script to know how to react
+        # return current mood so you can use it in other script to know how to react
         return(self._currentMood)

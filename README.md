@@ -1,6 +1,6 @@
 Brum
 ===================================
-Brum is a small project I work on in my freetime. I want to make a robot that acts like a companion. Almost like having a mechanical pet.
+Brum is a small project I work on in my free time. I want to make a robot that acts like a companion. Almost like having a mechanical pet.
 
 
 ## Implemented features
@@ -13,7 +13,7 @@ Brum is a small project I work on in my freetime. I want to make a robot that ac
 
 * A screen that can display text so Brum can talk.
 * Function that can map the surroundings.
-* Mood
+* Mood that can change.
 
 ## Planned hardware improvements
 
